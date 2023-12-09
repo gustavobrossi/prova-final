@@ -1,0 +1,166 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  color: white;
+  background-color: #1a1a1a; /* Dark background */
+  min-height: 100vh; /* Ensure App fills the entire viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.exam-container {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+}
+
+.options-container button {
+  background-color: #333; /* Darker shade for buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.options-container button:hover {
+  background-color: #555; /* Lighter shade on hover */
+}
+
+/* Updated color for selected options */
+.options-container button.option-selected {
+  background-color: #007bff; /* Blue background for selected options */
+  color: white;
+}
+
+.options-container button.option-correct {
+  background-color: #4CAF50; /* Green background for correct options */
+}
+
+.options-container button.option-wrong {
+  background-color: #f44336; /* Red background for wrong options */
+}
+
+.submit-btn {
+  background-color: #0D6EFD; /* Bootstrap primary color for example */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.next-btn {
+  background-color: #333; /* Dark color for next button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.back-btn {
+  background-color: #d3d3d3; /* Light gray background */
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #bdbdbd; /* Slightly darker shade on hover */
+}
+
+.feedback-message {
+  color: #FFD700; /* Gold color for feedback message */
+  margin-top: 20px;
+}
+
+.options-container button {
+  display: block; /* Make each button a block element */
+  width: 100%; /* Each button takes full width */
+  background-color: #333; /* Darker shade for buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0; /* Adjust margin for vertical spacing */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.results-container {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px; /* Adjusted margin for spacing */
+}
+
+.results-container h1, .results-container p {
+  margin-bottom: 15px; /* Spacing between text elements */
+}
+
+.question-balls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.question-ball {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.question-ball.correct {
+  background-color: green;
+}
+
+.question-ball.incorrect {
+  background-color: red;
+}
+
+.options-container button {
+  display: block; /* Make each button a block element */
+  width: 100%; /* Each button takes full width */
+  background-color: #333; /* Darker shade for buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0; /* Adjust margin for vertical spacing */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.options-container button:hover {
+  background-color: #555; /* Lighter shade on hover */
+}
+
+.explanation {
+  text-align: left;
+  margin-top: 20px;
+  background-color: #007bff; /* Blue background */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.explanation p {
+  margin: 5px 0; /* Spacing between paragraphs */
+}
